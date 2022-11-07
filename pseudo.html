@@ -14,13 +14,24 @@
            content: 'Gelo';
            color: coral;
        }
-       blockquote::before{
+       /* blockquote::before{
            content: '"';
+           color: crimson;
+           font-size: 1.5em;
+       } */
+       /* blockquote::after{
+           content: '"';
+           color: crimson;
+           font-size: 1.5em;
+
+       } */
+       blockquote::before{
+           content: open-quote;
            color: crimson;
            font-size: 1.5em;
        }
        blockquote::after{
-           content: '"';
+           content: close-quote;
            color: crimson;
            font-size: 1.5em;
 
