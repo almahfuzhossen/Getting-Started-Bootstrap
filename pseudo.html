@@ -36,7 +36,24 @@
            font-size: 1.5em;
 
        }
-
+       .section-title{
+           display: inline-block;
+       }
+     
+       .section-title::after {
+          content: '';
+          display: block;
+          background-color: lightsalmon;
+          height: 2px;
+          width: 100%;
+      }
+       .section-title:hover::before {
+          content: '';
+          display: block;
+          background-color: lightsalmon;
+          height: 2px;
+          width: 100%;
+      }
     </style>
 </head>
 <body>
@@ -44,7 +61,7 @@
     <h1>Having Fun With Pseudo Bhai Bon</h1>
     <h1>Having Fun With Pseudo Bhai Bon</h1>
    <section>
-       <h2>Best Quotes</h2>
+       <h2 class="section-title">Best Quotes</h2>
        <blockquote>
         If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success
        </blockquote>
